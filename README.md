@@ -1,6 +1,6 @@
 ![alt text](https://github.com/SeppHansen/SLSS-CANAnalyser/blob/main/SLSS%20CANAnalyser_banner.png?raw=true)
 
-# SLSS-CANAnalyser
+
 SLSS CANAnalyser ist eine Software zum Anzeigen, Aufzeichnen und Auswerten von CAN-Bus Daten. Als Hardware zur Verbindung mit dem Bus-System kommt ein, oder wahlweise auch mehrere Arduino (Uno) Micro-Controller, welche mit einem MCP2515 CAN-Controllerboard oder CAN-Shield bestückt werden, zum Einsatz. Das Hauptziel dieser Software soll es sein, die Handhabung und den Umgang mit CAN-Bus Signalen ohne den Einsatz von teuerer Software oder Hardware zu ermöglichen.
 
 Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.langer-sebastian.de/slss-cananalyser/)
