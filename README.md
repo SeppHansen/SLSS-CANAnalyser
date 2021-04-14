@@ -16,7 +16,10 @@ Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.l
 - gefundene Übereinstimmungen können in einer Ergebnisliste angezeigt und gespeichert / geladen werden
 - CAN-DBC Dateien können erstellt, geladen, editiert und gespeichert werden (nur eingehende Daten in Version 1.0.0.0)
 - komplette Projekte (gesetzte Einstellungen und DBC Liste, falls vorhanden) können, für einen schnellen Wechsel zwischen mehreren Projekten, geladen und gespeichert werden.  
-
+**ab Version 1.0.0.1**
+    - Auswertung der CAN Botschaften als ASCII-Textanzeige, um ASCII-Codierte Textübertragung erkennen zu können 
+    - Implementierung des SLSS CANData Viewer zum Laden, Sichten und Auswerten von aufgezeichneten CAN-Botschaften 
+    - Senden von CAN-Botschaften und Botschaftsabfolgen 
 
 ## Installation
 
@@ -57,7 +60,7 @@ Die angebotene Software ist ausschließlich für den Bereich des Prototyping ged
 
 
 # SLSS-CANAnalyser (english)
-SLSS CANAnalyser is Windows CAN-Bus-Analysis-Software to show, record and evaluate CAN-Bus signals / data. For the connection with the CAN-Bus System SLSS CANAnalyser uses one or more Arduino Micro-Controller with installed MCP2515-CAN Boards. One of the main intents behind SLSS CANAnalyser was to create a software solution for CAN analysis without the usage of professional equipment. 
+SLSS CANAnalyser is a for use with Microsoft Windows designed CAN-Bus-Analysis-Software to show, record and evaluate CAN-Bus signals and data. For the connection with an CAN-Bus System, SLSS CANAnalyser uses one or more Arduino Micro-Controller with installed MCP2515-CAN Boards. One of the main intents behind SLSS CANAnalyser was to create a software solution for CAN analysis without the usage of professional equipment. 
 
 Note:The GUI of this software is completely in german, an english version will be released when the developement is completely done, or  the demand of an english version is huge. 
 
@@ -74,7 +77,11 @@ For further informations, please go to [langer-sebastian.de/SLSS-CANAnalyser](ht
 - Publish changings in separate resultlist (also load- and saveable)
 - Create, open, edit and save CAN-DBC files (only incoming-data supported on version 1.0.0.0)  
 - Show DBC-data values on an extra tab called DBC-Signalliste
-- Save and load complete projects (all settings and DBC-data will be stored) for fast switch of different projects   
+- Save and load complete projects (all settings and DBC-data will be stored) for fast switch of different projects
+**from Version 1.0.0.1**
+    - Integrated module to evaluate ASCII-based textmessages sended via CAN-Bus 
+    - Implementation of SLSS CANData Viewer for loading, showing and evaluating recorded or stored CAN messages 
+    - Transmitting single or multiple CAN messages    
 
 
 ## Installation
