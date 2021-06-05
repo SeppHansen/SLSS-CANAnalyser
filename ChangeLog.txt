@@ -1,0 +1,9 @@
+Version 1.0.0.2 (05.06.2021)	
+	- BUG BEHOBEN 		- fehlerhafte live-Erkennung der Checkbox beim Senden der Daten (keine Erkenung bei Direktumschaltung während des Sendeloops) behoben
+	- BUG BEHOBEN		- Hochzählen des Counters für gesendete Pakete trotz übersprungener Botschaft unterbunden
+	- BUG BEHOBEN		- Bug bei der Auswahl zwischen ID und Datenerfassung für extended ID behoben (kam mit Version 1.0.0.1)
+	- ERWEITERUNG		- verbessertes Erkennen von Verbindungsabbrüchen zum aktuell verbundenen CAN-Board umgesetzt
+	- ERWEITERUNG 		- Erkennung von COM-Geräten, welche nach dem starten des Programmes angeschlossen wurden implementiert	
+	- FEHLERHANDLING	- Lesefehler von inkonsistenten CAN-Paketen abgefangen
+	- FEHLERHANDLING	- Fehlerhandling beim Senden des Datenrequests erweitert
+
