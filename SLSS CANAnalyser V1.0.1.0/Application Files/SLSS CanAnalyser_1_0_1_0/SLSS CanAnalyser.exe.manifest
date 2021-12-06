@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SLSS CanAnalyser.exe" version="1.0.1.0" publicKeyToken="ce6a4e747f25f7f8" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="SLSS_CANAnalyser.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SLSS CanAnalyser" version="1.0.1.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SLSS CanAnalyser.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC-Manifestoptionen
+             Wenn Sie die Ebene der Benutzerkontensteuerung für Windows ändern möchten, ersetzen Sie den 
+             Knoten "requestedExecutionLevel" wie folgt.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Durch Angabe des Elements "requestedExecutionLevel" wird die Datei- und Registrierungsvirtualisierung deaktiviert. 
+            Entfernen Sie dieses Element, wenn diese Virtualisierung aus Gründen der Abwärtskompatibilität
+            für die Anwendung erforderlich ist.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.mshtml.dll" size="8032448">
+      <assemblyIdentity name="Microsoft.mshtml" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UZQUivt7AdjvMvNdvtf/NDkmeNpKbNpwWemMvAWubo0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SLSS CanAnalyser.exe" size="5214144">
+      <assemblyIdentity name="SLSS CanAnalyser" version="1.0.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SeGWYKAnQG+twH1FqQmXrO6Av0hnzJ4jaSoH44c23n8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.License.dll" size="98816">
+      <assemblyIdentity name="Spire.License" version="1.3.8.40" publicKeyToken="B1144360237C8B3F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vSzvXqOu9+fOHUI2vAVsbCHncp7ybmNK+xsMy+KT1c4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.Pdf.dll" size="18466576">
+      <assemblyIdentity name="Spire.Pdf" version="6.10.0.0" publicKeyToken="663F351905198CB3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RpvP5NScLSzL+lSVQfarkwdu+xjbhSwuuFihj655rSA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spire.XLS.dll" size="9647888">
+      <assemblyIdentity name="Spire.XLS" version="10.10.1.0" publicKeyToken="663F351905198CB3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>naVLdELx6u3tMXZyDlOhnV8KHFQQWQxsEHEpeSTJrBA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SLSS CanAnalyser.exe.config" size="1231">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ioz0L8Iv02fiuqOt1YQfeDEdUe/jNQ+w6ZDPWPXLGw8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SLSS_CANAnalyser.ico" size="162635">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w7TPI8oTVh4i76zU4LvCTLd6fm4kZS6cmK5CyZTVnwE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Eine Liste der Windows-Versionen, unter denen diese Anwendung getestet
+           und für die sie entwickelt wurde. Wenn Sie die Auskommentierung der entsprechenden Elemente aufheben, 
+           wird von Windows automatisch die kompatibelste Umgebung ausgewählt. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=HP-ENVY13\lange" issuerKeyHash="ed296f64ac6d8ee640e9f7a5c7b9d72e2cbf7c3c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>IUIPSq1Bf3nMls6VxKmK5jyXHdx0SgBQ4H0ZOJdcZeE=</DigestValue></Reference></SignedInfo><SignatureValue>Cc26aumow5g2ju4JNKHPjMgDXpuFF9DwVtitzIrBRcreO+qj4SOmy/KBE4HM90kF9BmeGmmN0eRd0eKQT36uIreXnuBm2sJK/JU93th+MGnlI9Xp90hmwnFc9SLATT/O6n9S/Qvzg7S+xbHg54fjr1S90vVoXbX52Th4mkerKCU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yHiZvH3LxvElE1fwZUiP2K1d7Qf1vEA5a9TSNBZcNzsvqLzy+Y5EfrGdMro3CDnqII8yTAx3xQVjEMrhBfvT4DsDpiH62Ls4WD+6Y29b/KIWnxkB/aoChCLy5M8SB91j9Qs88X19T3CuY2SrH3NMrulAigIMcorjXQECUjo2o2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e1655c9738197de050004a74dc1d973ce68aa9c495ce96cc797f41ad4a0f4221" Description="" Url=""><as:assemblyIdentity name="SLSS CanAnalyser.exe" version="1.0.1.0" publicKeyToken="ce6a4e747f25f7f8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HP-ENVY13\lange</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Jmt+0wbwC11Ljrl7R95dKuyuh+hp//MG+SByhWa4MLg=</DigestValue></Reference></SignedInfo><SignatureValue>BvGZDMkk8NgIQpIxyEySLx9Q41AKzDvR58oOFeTJVReHZrKNdlp0u/hdhgOqR3v0ntNzEpqSJtpAwqf5PVgfMZEoBSdK5woy4yid/dBJmRJsYhVlK3T6k3/JwJD4tWQhqoZ8A/UFuxaY+4jX1eHML44DZ13fxCuh9AnAJLmgtF4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yHiZvH3LxvElE1fwZUiP2K1d7Qf1vEA5a9TSNBZcNzsvqLzy+Y5EfrGdMro3CDnqII8yTAx3xQVjEMrhBfvT4DsDpiH62Ls4WD+6Y29b/KIWnxkB/aoChCLy5M8SB91j9Qs88X19T3CuY2SrH3NMrulAigIMcorjXQECUjo2o2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQTUdPEbMJS5FCAGql3qPsOjANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ASABQAC0ARQBOAFYAWQAxADMAXABsAGEAbgBnAGUwHhcNMjEwMzAyMjEwMzE4WhcNMjIwMzAzMDMwMzE4WjApMScwJQYDVQQDHh4ASABQAC0ARQBOAFYAWQAxADMAXABsAGEAbgBnAGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMh4mbx9y8bxJRNX8GVIj9itXe0H9bxAOWvU0jQWXDc7L6i88vmORH6xnTK6Nwg56iCPMkwMd8UFYxDK4QX70+A7A6Yh+ti7OFg/umNvW/yiFp8ZAf2qAoQi8uTPEgfdY/ULPPF9fU9wrmNkqx9zTK7pQIoCDHKK410BAlI6NqNpAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAvjvMYLdQbaNhzX5495LALUqor2KuVcmuKxXWSTHTAAHYnjBMIcnaJAsdblLySezIf7TNJ2Q52t1Jfo5ULxesKbrwT1YSBhcbF98onVZCg28s8OCXzDDii+N5kT5liOXy3AQ6cgR/V51qsrkgzXVDimAnGqOGC1q/VI8Cdt6Mzco=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
