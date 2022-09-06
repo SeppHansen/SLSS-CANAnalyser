@@ -8,7 +8,7 @@ Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.l
 ## Funktionen
 
 - Anzeigen eingehender CAN-Daten
-- Aufnehmen eingehender CAN-Daten
+- Aufzeichnung eingehender CAN-Daten
 - Filterfuntion um nicht gewünschte oder benötigte CAN-IDs auszublenden
 - gelesene und aufgezeichnete CAN-Daten können in eine Excel-Datei exportiert werden
 - gelesene und aufgezeichnete CAN-Daten können in eine SLSS CANAnalyser spezifische Datei gespeichert und von dort aus wieder geladen werden
@@ -16,7 +16,14 @@ Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.l
 - gefundene Übereinstimmungen können in einer Ergebnisliste angezeigt und gespeichert / geladen werden
 - CAN-DBC Dateien können erstellt, geladen, editiert und gespeichert werden (nur eingehende Daten in Version 1.0.0.0)
 - komplette Projekte (gesetzte Einstellungen und DBC Liste, falls vorhanden) können, für einen schnellen Wechsel zwischen mehreren Projekten, geladen und gespeichert werden.  
-**ab Version 1.0.0.1**
+
+
+- **ab Version 1.0.2.0**
+    - richtige Darstellung von CAN Botschaften welche kürzer als 8 Byte Länge sind
+    - Versionskontrolle des Micro-Controller Programmcodes beim Verbinden mit der Hardware umgesetzt
+
+
+- **ab Version 1.0.0.1**
     - Auswertung der CAN Botschaften als ASCII-Textanzeige, um ASCII-Codierte Textübertragung erkennen zu können 
     - Implementierung des SLSS CANData Viewer zum Laden, Sichten und Auswerten von aufgezeichneten CAN-Botschaften 
     - Senden von CAN-Botschaften und Botschaftsabfolgen 
@@ -24,16 +31,17 @@ Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.l
 ## Installation
 
 ### Micro-Controller
-- SLSS CANAnalyser Software für Microsoft Windows und Micro-Controller Code für den Arduino herunterladen 
-- Die richtige Takt-Frequenz in der Micro-Controller Software muss je nach verbautem Schwingquartz des CAN-Boards gewählt werden. Dazu einfach den richtigen Eintrag im Programmcode wählen, der nicht zutreffende Eintrag muss dann gelöscht, oder auskommentiert werden. 
-- [optional] Die Geräte-ID kann in der Micro-Controller Software zur besseren Unterscheidung bei der Verwendung mehrerer CAN-Boards geändert werden  
-- den editierten Code via Arduino IDE auf den angeschlossenen Arduino hochladen (zum erfolgereichen Upload ist die Installation der verwendeten MCP-CAN Bibliothek nötig)
+1. SLSS CANAnalyser Software für Microsoft Windows und Micro-Controller Code für den Arduino herunterladen 
+2. Die richtige Takt-Frequenz für die Micro-Controller Software muss je nach verbautem Schwingquartz des CAN-Boards gewählt werden. Dazu den Wert des Schwingquarzes auf dem CAN-Board ablesen und analog dazu einfach den richtigen Programmcode im Ordner auswählen.
+
+3. [optional] Die Geräte-ID kann in der Micro-Controller Software zur besseren Unterscheidung bei der Verwendung mehrerer CAN-Boards geändert werden  
+4. den editierten Code via Arduino IDE auf den angeschlossenen Arduino hochladen (zum erfolgereichen Upload ist die Installation der verwendeten MCP-CAN Bibliothek nötig)
 
 ### SLSS CANAnalyser for Windows
-- SLSS CANAnalyser auf dem Windows PC installieren und ausführen
-- nach dem Start den COM-Port, an welchem der Arduino an den PC angeschlossen ist auswählen (Hinweis: bitte, falls geöffnet, den seriellen Monitor der Arduino IDE schließen, da der SLSS CANAnalyser ansonsten keine Verbindung zum Board herstellen kann!)
-- nach dem Setzen der Bus-Geschwindigkeit kann die Verbindung zum CAN-Board durch das Klicken auf "verbinden" hergestellt werden
-- Falls der Port unbekannt sein sollte, kann über die Modulsuche das CAN-Board automatisch gesucht werden
+1. SLSS CANAnalyser auf dem Windows PC installieren und ausführen
+2. Nach dem Start den COM-Port, an welchem der Arduino an den PC angeschlossen ist auswählen.<br><font color="red"><b>Hinweis:</b></font> Bitte, falls geöffnet, den seriellen Monitor der Arduino IDE schließen, da der SLSS CANAnalyser ansonsten keine Verbindung zum Board herstellen kann!
+3. Nach dem Setzen der Bus-Geschwindigkeit kann die Verbindung zum CAN-Board durch das Klicken auf "verbinden" hergestellt werden.
+4. Falls der COM-Port unbekannt sein sollte, kann über einen Klick auf "Modulsuche" das CAN-Board auch automatisch gesucht werden
 
 Nach erfolgreich hergestellter Verbindung werden die eingehenden CAN-Daten im Tab "Aktuell eingehende CAN-Daten" unterhalb der Bedienelemente angezeigt. 
 Weitere Informationen zur Bedienung können der Bedienungsanleitung (04.03.2021 - in Erstellung) entnommen werden.
@@ -60,43 +68,52 @@ Die angebotene Software ist ausschließlich für den Bereich des Prototyping ged
 
 
 # SLSS-CANAnalyser (english)
-SLSS CANAnalyser is a for use with Microsoft Windows designed CAN-Bus-Analysis-Software to show, record and evaluate CAN-Bus signals and data. For the connection with an CAN-Bus System, SLSS CANAnalyser uses one or more Arduino Micro-Controller with installed MCP2515-CAN Boards. One of the main intents behind SLSS CANAnalyser was to create a software solution for CAN analysis without the usage of professional equipment. 
+SLSS CANAnalyser is a Microsoft Windows based CAN bus analysis software to show, record and evaluate CAN-Bus signals and data. For the connection with an CAN bus system, SLSS CANAnalyser use one or more Arduino micro controller boards with installed MCP2515 CAN extension. One of the main intents behind SLSS CANAnalyser was to build a software solution for CAN analysis without the usage of professional and mostly expensive equipment. 
 
-Note:The GUI of this software is completely in german, an english version will be released when the developement is completely done, or  the demand of an english version is huge. 
+<b>Note:</b> The GUI of this software is completely in german, an english version will be released when the development is completely done, or the demand of an english version is huge. 
 
-For further informations, please go to [langer-sebastian.de/SLSS-CANAnalyser](https://www.langer-sebastian.de/slss-cananalyser/)
+For further information, please go to [langer-sebastian.de/SLSS-CANAnalyser](https://www.langer-sebastian.de/slss-cananalyser/)
 
 ## Features
 
-- Visualize incoming CAN-data
-- Record incomming CAN-data 
-- Set filters to hide undesirable / not needed CAN-IDs (also possible for recording)
-- Export visualized and recorded CAN-data to Excel-file
-- Save and load recordings to files in SLSS CANAnalyser format
-- Automatically search for adjustable bit or byte changings in one or all incoming CAN-Ids
-- Publish changings in separate resultlist (also load- and saveable)
-- Create, open, edit and save CAN-DBC files (only incoming-data supported on version 1.0.0.0)  
-- Show DBC-data values on an extra tab called DBC-Signalliste
-- Save and load complete projects (all settings and DBC-data will be stored) for fast switch of different projects
+- visualize incoming CAN-data
+- record incoming CAN-data 
+- set filters to hide undesirable / not needed CAN-IDs (also possible for recording)
+- export visualized and recorded CAN-data to Excel-file
+- save and load recordings to files in SLSS CANAnalyser format
+- automatically search for adjustable bit or byte changes in one or all incoming CAN-ids
+- publish changes in separate result lists (also load- and savable)
+- create, open, edit and save CAN-DBC files (only incoming-data supported on version 1.0.0.0)  
+- show DBC-data values on an extra tab called "DBC-Signalliste"
+- save and load complete projects (all settings and DBC-data will be stored) for fast switch of different projects
+
+
+**from Version 1.0.2.0**
+    - correct display of CAN messages shorter than 8 bytes
+    - version check of actual flashed µC code
+
+
+
 **from Version 1.0.0.1**
-    - Integrated module to evaluate ASCII-based textmessages sended via CAN-Bus 
-    - Implementation of SLSS CANData Viewer for loading, showing and evaluating recorded or stored CAN messages 
-    - Transmitting single or multiple CAN messages    
+    - integrate module to evaluate ASCII-based text messages send via CAN bus 
+    - implementation of "SLSS CANData Viewer" for loading, showing and evaluating recorded or stored CAN messages 
+    - transmitting single or multiple CAN messages    
 
 
 ## Installation
 
 ### Micro-Controller
-- Download SLSS CANAnalyser Software for Windows and the codefile for the Arduino based Micro-Controller
-- Choose the right oscillator-frequency for your CAN-Board by set / comment out the right values on top of the code (8MHz or 16Mhz)
-- [optional] Configure device-ID in Arduino Code to distinguish multiple connected boards
-- Upload the Arduino Code to your Arduino Board (the installation of the MCP-CAN library is necessary)
+1. Download SLSS CANAnalyser Software for Windows and the code file for the Arduino based microcontroller
+2. choose the correct oscillator-frequency of your CAN board by selecting the right file of microcontroller code (8MHz or 16Mhz)
+3. [optional] configure device-ID in Arduino Code to distinguish multiple connected boards
+4. upload the Arduino Code to your Arduino Board (the installation of the MCP-CAN library is necessary)
 
 ### SLSS CANAnalyser for Windows
-- Install SLSS CANAnalyser for Windows on your Windows Computer
-- Start SLSS CANAnalyer and select the com-port the Arduino Micro-Controllerboard is connected to (note: please close Arduino serial terminal if still opened, otherwise SLSS CANAnalyser could not create an connection to the board!)
-- Set CAN-Bus data-rate and click "verbinden" to establish connection 
-- If you don't know to which com-port your Micro-Controllerboard is connected to, use the modul-search function to automatically search for all connected modules. (click on "Modulsuche" button)
+1. install SLSS CANAnalyser for Windows on your Windows Computer
+2. start SLSS CANAnalyer and select the com-port your Arduino microcontroller board is connected to <br><font color="red"><b>Notice:</b></font> Please close Arduino serial terminal if still opened, otherwise SLSS CANAnalyser could not create a connection to the board!
+3. set CAN-Bus data rate and click "verbinden" to establish connection 
+4. if you don't know the com port your microController board is connected to, use the modul search function by clicking on "Modulsuche" to automatically search for all connected modules.
+
 - If connection was sucessfully established, you should see all incomming CAN data in the first tab underneath the control-buttons, named "Aktuell eingehende CAN-Daten"
 
 For more informations see the users manual (04.03.2021 - in creation / not available).
