@@ -103,7 +103,7 @@ void SerialControl(String received) {
     int sendLen = -1;
 
     // get amount of bytes to send
-    for(int i=0; i < 8; i++)
+    for(int i=0; i <=8; i++)
     {
       if(splitString(sendData, ' ', i) != "")
         sendLen++;  
@@ -119,7 +119,7 @@ void SerialControl(String received) {
     CAN0.sendMsgBuf(sendID, 0, sendLen, myCANMessage);    
   }
 
-    //send extended CAN(2.0B)-data on Bus if received from SLSS-Software (only if found == true)
+  //send extended CAN(2.0B)-data on Bus if received from SLSS-Software (only if found == true)
   else if(received.indexOf("CAN_setExtDATA X") != -1 && found)
   {
     //split ID and sending Data bytes
@@ -128,7 +128,7 @@ void SerialControl(String received) {
     int sendLen = -1;
 
     // get amount of bytes to send
-    for(int i=0; i<8; i++)
+    for(int i=0; i<=8; i++)
     {
       if(splitString(sendData, ' ', i) != "")
         sendLen++;  
