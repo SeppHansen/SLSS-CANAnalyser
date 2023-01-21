@@ -1,22 +1,36 @@
 ![alt text](https://github.com/SeppHansen/SLSS-CANAnalyser/blob/main/SLSS%20CANAnalyser_banner.png?raw=true)
 
 
-SLSS CANAnalyser ist eine Software zum Anzeigen, Aufzeichnen und Auswerten von CAN-Bus Daten. Als Hardware zur Verbindung mit dem Bus-System kommt ein, oder wahlweise auch mehrere Arduino (Uno) Micro-Controller, welche mit einem MCP2515 CAN-Controllerboard oder CAN-Shield bestückt werden, zum Einsatz. Das Hauptziel dieser Software soll es sein, die Handhabung und den Umgang mit CAN-Bus Signalen ohne den Einsatz von teuerer Software oder Hardware zu ermöglichen.
+SLSS CANAnalyser ist eine Software zum Anzeigen, Aufzeichnen und Auswerten von CAN-Bus Daten. Als Hardware zur Verbindung mit dem Bus-System kommt ein, oder wahlweise auch mehrere Arduino (Uno) Micro-Controller, welche mit einem MCP2515 CAN-Controller-Board oder CAN-Shield bestückt werden, zum Einsatz. Das Hauptziel dieser Software soll es sein, die Handhabung und den Umgang mit CAN-Bus Signalen ohne den Einsatz von teurer Software oder Hardware zu ermöglichen.
 
 Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.langer-sebastian.de/slss-cananalyser/)
+
   
 ## Funktionen
 
 - Anzeigen eingehender CAN-Daten
 - Aufzeichnung eingehender CAN-Daten
-- Filterfuntion um nicht gewünschte oder benötigte CAN-IDs auszublenden
+- Filterfunktion um nicht gewünschte oder benötigte CAN-IDs auszublenden
 - gelesene und aufgezeichnete CAN-Daten können in eine Excel-Datei exportiert werden
 - gelesene und aufgezeichnete CAN-Daten können in eine SLSS CANAnalyser spezifische Datei gespeichert und von dort aus wieder geladen werden
 - eingehende CAN-Daten können anhand eines einstellbaren Suchrasters Bit- oder Byteweise durchsucht werden (1. Schritt - Reverse Engineering)
 - gefundene Übereinstimmungen können in einer Ergebnisliste angezeigt und gespeichert / geladen werden
-- CAN-DBC Dateien können erstellt, geladen, editiert und gespeichert werden (nur eingehende Daten in Version 1.0.0.0)
-- komplette Projekte (gesetzte Einstellungen und DBC Liste, falls vorhanden) können, für einen schnellen Wechsel zwischen mehreren Projekten, geladen und gespeichert werden.  
+- CAN-DBC Dateien können erstellt, geladen, editiert und gespeichert werden (nur eingehende Daten in Version 1.1.0.14)
+- komplette Projekte (gesetzte Einstellungen und DBC Liste, falls vorhanden) können, für einen schnellen Wechsel zwischen mehreren Projekten, geladen und gespeichert werden.
 
+
+- **ab Version 1.1.0.14**
+
+    - Alle Softwarekomponenten auf englische Spracheinstellung umstellbar
+    - App Installer durch nativen Windows Installer ersetzt
+    - TCP Client Interface - Weitergabe eingehender Botschaften an externe Anwendungen per TCP/IP Verbindung
+    - Botschaftsänderungszähler in der Anzeige für eingehende CAN-Daten hinzugefügt
+    - Byte-Highlighting - Anzeige der Änderungsposition (Byte) bei eingehenden Botschaften (abschaltbar)
+    - Eingabe von Hexadezimalwerten im Sendebereich möglich
+    - Kontinuierliches Sortieren (auf und absteigend) der Eingangsdaten per Spaltenauswahl umgesetzt
+    - Ringpuffergröße des CAN Recorders einstellbar
+    - Laden von DBC-Dateien verbessert und Optionen erweitert
+  
 
 - **ab Version 1.0.2.0**
     - richtige Darstellung von CAN Botschaften welche kürzer als 8 Byte Länge sind
@@ -32,13 +46,13 @@ Weitere Informationen siehe [langer-sebastian.de/SLSS-CANAnalyser](https://www.l
 
 ### Micro-Controller
 1. SLSS CANAnalyser Software für Microsoft Windows und Micro-Controller Code für den Arduino herunterladen 
-2. Die richtige Takt-Frequenz für die Micro-Controller Software muss je nach verbautem Schwingquartz des CAN-Boards gewählt werden. Dazu den Wert des Schwingquarzes auf dem CAN-Board ablesen und analog dazu einfach den richtigen Programmcode im Ordner auswählen.
+2. Die richtige Takt-Frequenz für die Micro-Controller Software muss je nach verbautem Schwingquarz des CAN-Boards gewählt werden. Dazu den Wert des Schwingquarzes auf dem CAN-Board ablesen und analog dazu einfach den richtigen Programmcode im Ordner auswählen.
 
 3. [optional] Die Geräte-ID kann in der Micro-Controller Software zur besseren Unterscheidung bei der Verwendung mehrerer CAN-Boards geändert werden  
-4. den editierten Code via Arduino IDE auf den angeschlossenen Arduino hochladen (zum erfolgereichen Upload ist die Installation der verwendeten MCP-CAN Bibliothek nötig)
+4. den editierten Code via Arduino IDE auf den angeschlossenen Arduino hochladen (zum erfolgreichen Upload ist die Installation der verwendeten MCP-CAN Bibliothek nötig)
 
 ### SLSS CANAnalyser for Windows
-1. SLSS CANAnalyser auf dem Windows PC installieren und ausführen
+1. SLSS CANAnalyser auf dem Windows-PC installieren und ausführen
 2. Nach dem Start den COM-Port, an welchem der Arduino an den PC angeschlossen ist auswählen.<br><font color="red"><b>Hinweis:</b></font> Bitte, falls geöffnet, den seriellen Monitor der Arduino IDE schließen, da der SLSS CANAnalyser ansonsten keine Verbindung zum Board herstellen kann!
 3. Nach dem Setzen der Bus-Geschwindigkeit kann die Verbindung zum CAN-Board durch das Klicken auf "verbinden" hergestellt werden.
 4. Falls der COM-Port unbekannt sein sollte, kann über einen Klick auf "Modulsuche" das CAN-Board auch automatisch gesucht werden
@@ -59,7 +73,7 @@ Die hier veröffentlichte Software wurde auf mehreren Systemen fehlerfrei getest
 
 ## Zusatz zur Nutzung im Bereich der StVO / StVZO
 
-Die angebotene Software ist ausschließlich für den Bereich des Prototyping gedacht und die Nutzung somit ausschließlich abseits des öffentlichen Verkehrsraum gestattet! Von einer Nutzung während der Fahrt wird ausdrücklich abgeraten. 
+Die angebotene Software ist ausschließlich für den Bereich des Prototyping gedacht und die Nutzung somit ausschließlich abseits des öffentlichen Verkehrsraums gestattet! Von einer Nutzung während der Fahrt wird ausdrücklich abgeraten. 
 
 
 
@@ -68,7 +82,7 @@ Die angebotene Software ist ausschließlich für den Bereich des Prototyping ged
 
 
 # SLSS-CANAnalyser (english)
-SLSS CANAnalyser is a Microsoft Windows based CAN bus analysis software to show, record and evaluate CAN-Bus signals and data. For the connection with an CAN bus system, SLSS CANAnalyser use one or more Arduino micro controller boards with installed MCP2515 CAN extension. One of the main intents behind SLSS CANAnalyser was to build a software solution for CAN analysis without the usage of professional and mostly expensive equipment. 
+SLSS CANAnalyser is a Microsoft Windows based CAN bus analysis software to show, record and evaluate CAN-Bus signals and data. For the connection with an CAN bus system, SLSS CANAnalyser use one or more Arduino microcontroller boards with installed MCP2515 CAN extension. One of the main intents behind SLSS CANAnalyser was to build a software solution for CAN analysis without the usage of professional and mostly expensive equipment. 
 
 <b>Note:</b> The GUI of this software is completely in german, an english version will be released when the development is completely done, or the demand of an english version is huge. 
 
@@ -88,13 +102,25 @@ For further information, please go to [langer-sebastian.de/SLSS-CANAnalyser](htt
 - save and load complete projects (all settings and DBC-data will be stored) for fast switch of different projects
 
 
-**from Version 1.0.2.0**
+- **since version 1.1.0.14**
+
+    - All software components changeable to english language 
+    - Replaced app installer with native Windows installer
+    - TCP client interface - forwarding of all incoming CAN messages to 3rd party applications via TCP/IP connection
+    - Add message change counter for incoming messages inside the CAN data tab
+    - Byte-highlighting - visualization of change position (byte) for incoming CAN data (switchable)
+    - Input of hexadecimal values inside the send-message tab
+    - Implement continuous sort mode (ascending and descending) for incoming data via column selection (switchable)
+    - Adjustable buffer size for CAN Recorder
+    - Increase loading and saving behaviour for *.dbc files
+
+- **since version 1.0.2.0**
     - correct display of CAN messages shorter than 8 bytes
     - version check of actual flashed µC code
 
 
 
-**from Version 1.0.0.1**
+- **since version 1.0.0.1**
     - integrate module to evaluate ASCII-based text messages send via CAN bus 
     - implementation of "SLSS CANData Viewer" for loading, showing and evaluating recorded or stored CAN messages 
     - transmitting single or multiple CAN messages    
@@ -110,13 +136,13 @@ For further information, please go to [langer-sebastian.de/SLSS-CANAnalyser](htt
 
 ### SLSS CANAnalyser for Windows
 1. install SLSS CANAnalyser for Windows on your Windows Computer
-2. start SLSS CANAnalyer and select the com-port your Arduino microcontroller board is connected to <br><font color="red"><b>Notice:</b></font> Please close Arduino serial terminal if still opened, otherwise SLSS CANAnalyser could not create a connection to the board!
+2. start SLSS CANAnalyser and select the com-port your Arduino microcontroller board is connected to <br><font color="red"><b>Notice:</b></font> Please close Arduino serial terminal if still opened, otherwise SLSS CANAnalyser could not create a connection to the board!
 3. set CAN-Bus data rate and click "verbinden" to establish connection 
 4. if you don't know the com port your microController board is connected to, use the modul search function by clicking on "Modulsuche" to automatically search for all connected modules.
 
-- If connection was sucessfully established, you should see all incomming CAN data in the first tab underneath the control-buttons, named "Aktuell eingehende CAN-Daten"
+- If connection was successfully established, you should see all incoming CAN data in the first tab underneath the control-buttons, named "Aktuell eingehende CAN-Daten"
 
-For more informations see the users manual (04.03.2021 - in creation / not available).
+For more information see the users manual (04.03.2021 - in creation / not available).
 
 ## Note for issues, malfunctions and debugging 
 
@@ -125,7 +151,7 @@ This Software is actually still in development. Some functions might be faulty o
 
 ## Disclaimer of liability
 
-This software was tested on multiple systems without any problems or issues. Nevertheless, no liability can be assumed for any damage, instability or other impairments occuring directly or passively through the installation, usage or in any other kind of correlation with these software. Download, installation and usage is completely 
+This software was tested on multiple systems without any problems or issues. Nevertheless, no liability can be assumed for any damage, instability or other impairments occurring directly or passively through the installation, usage or in any other kind of correlation with this software. Download, installation and usage is completely 
 at your own risk! For any further problems, please contact info@langer-sebastian.de!
 
 

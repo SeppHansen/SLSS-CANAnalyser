@@ -1,3 +1,16 @@
+Version 1.1.0.14 (22.01.2023)
+	- FEATURE		- All software components changeable to english language 
+	- FEATURE		- Replaced app installer with native windows installer
+	- FEATURE		- TCP client interface - forwarding of all incoming CAN messages to 3rd party applications via TCP/IP connection
+	- FEATURE		- Add message change counter for incoming messages inside the CAN data tab
+	- FEATURE		- Byte-highlighting - visualization of change position (byte) for incoming CAN data (switchable)
+	- FEATURE		- Input of hexadecimal values inside the send message tab
+	- FEATURE		- continuous sort mode (ascending and descending) for incoming data via column selection (switchable)
+	- FEATURE		- Adjustable buffer size for CAN Recorder
+	- FEATURE		- Increase loading and saving behaviour for *.dbc files
+	- BUGFIX		- multiple bugfixes
+
+
 Version 1.0.2.0 (06.09.2022)
 	- FEATURE		- implement correct display of CAN messages shorter than 8 byte
 	- FEATURE		- implement micro controller code check to ensure that the right code version is installed 
