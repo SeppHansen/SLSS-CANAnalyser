@@ -2,20 +2,18 @@
 
 # SLSS CANAnalyser
 
-### Professional CAN & CAN FD Analysis, Logging and Automation
-
-**Powerful bus analysis. Intuitive workflows. Built for engineering.**
+<br>
 
 [![Platform](https://img.shields.io/badge/-Platform%20--%20Windows-C2C2C2?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
 [![Technology](https://img.shields.io/badge/-Technology%20--%20C%23%20%2F%20.NET-C2C2C2?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
 [![CAN](https://img.shields.io/badge/-Bus%20--%20CAN%20%7C%20CAN%20FD-C2C2C2?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
 [![Hardware](https://img.shields.io/badge/-Hardware%20--%20SeRoSys%20CAN%20Dongles-C2C2C2?style=for-the-badge)](https://serosys-tech.com/)
 
-[![**Product Overview**](https://img.shields.io/badge/-Product%20Overview-007f02)](https://serosys-tech.com/product-lineup/) · [![**Download (US)**](https://img.shields.io/badge/-Download%20(US)-007f02)](https://serosys-tech.com/downloads) · [![**Download (EU)**](https://img.shields.io/badge/-Download%20(EU)-007f02)](https://www.langer-sebastian.de/slss-cananalyser/) ·  [![**Hardware**](https://img.shields.io/badge/-Hardware%20Overview-007f02)](https://serosys-tech.com/shop) ·  [![**Tutorials**](https://img.shields.io/badge/-Tutorials-007f02)](https://serosys-tech.com/instructional-videos) ·  [![**Contact**](https://img.shields.io/badge/-Contact-007f02)](mailto:SLSS_Official@langer-sebastian.de)
+[![**Product Overview**](https://img.shields.io/badge/-Product%20Overview-007f02)](https://serosys-tech.com/product-lineup/) ' [![**Download (US)**](https://img.shields.io/badge/-Download%20(US)-007f02)](https://serosys-tech.com/downloads) ' [![**Download (EU)**](https://img.shields.io/badge/-Download%20(EU)-007f02)](https://www.langer-sebastian.de/slss-cananalyser/) ' [![**Hardware**](https://img.shields.io/badge/-Hardware%20Overview-007f02)](https://serosys-tech.com/shop) ' [![**Tutorials**](https://img.shields.io/badge/-Tutorials-007f02)](https://serosys-tech.com/instructional-videos) ' [![**Contact**](https://img.shields.io/badge/-Contact-007f02)](mailto:SLSS_Official@langer-sebastian.de)<br><br>
 
 </div>
 
----
+
 
 ## Overview
 
@@ -126,7 +124,6 @@ An **education program** also supports students and pupils using supported open-
 ## About SLSS
 
 **Sebastian Langer Software Solutions UG (haftungsbeschränkt)** develops engineering software and electronic solutions with a focus on automotive communication, CAN analysis and practical test automation.
-
 SLSS CANAnalyser is developed in cooperation with **SeRoSys Technology LLC**, combining software and dedicated hardware to make sophisticated bus analysis approachable and effective.
 
 <div align="center">
