@@ -6,12 +6,12 @@
 
 **Powerful bus analysis. Intuitive workflows. Built for engineering.**
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.langer-sebastian.de/slss-cananalyser/)
-[![Technology](https://img.shields.io/badge/Technology-C%23%20%2F%20.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://www.langer-sebastian.de/slss-cananalyser/)
-[![CAN](https://img.shields.io/badge/Bus-CAN%20%7C%20CAN%20FD-0B7285?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
-[![Hardware](https://img.shields.io/badge/Hardware-SeRoSys-222222?style=for-the-badge)](https://serosys-tech.com/)
+[![Platform](https://img.shields.io/badge/-Platform%20--%20Windows-C2C2C2?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
+[![Technology](https://img.shields.io/badge/-Technology%20--%20C%23%20%2F%20.NET-C2C2C2?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
+[![CAN](https://img.shields.io/badge/-Bus%20--%20CAN%20%7C%20CAN%20FD-C2C2C2?style=for-the-badge)](https://www.langer-sebastian.de/slss-cananalyser/)
+[![Hardware](https://img.shields.io/badge/-Hardware%20--%20SeRoSys%20CAN%20Dongles-C2C2C2?style=for-the-badge)](https://serosys-tech.com/)
 
-[**Product Overview**](https://www.langer-sebastian.de/slss-cananalyser/) · [**Download**](https://serosys-tech.com/downloads) · [**Hardware**](https://serosys-tech.com/shop) · [**Tutorials**](https://serosys-tech.com/instructional-videos) · [**Contact**](mailto:SLSS_Official@langer-sebastian.de)
+[![**Product Overview**](https://img.shields.io/badge/-Product%20Overview-007f02)](https://serosys-tech.com/product-lineup/) · [![**Download (US)**](https://img.shields.io/badge/-Download%20(US)-007f02)](https://serosys-tech.com/downloads) · [![**Download (EU)**](https://img.shields.io/badge/-Download%20(EU)-007f02)](https://www.langer-sebastian.de/slss-cananalyser/) ·  [![**Hardware**](https://img.shields.io/badge/-Hardware%20Overview-007f02)](https://serosys-tech.com/shop) ·  [![**Tutorials**](https://img.shields.io/badge/-Tutorials-007f02)](https://serosys-tech.com/instructional-videos) ·  [![**Contact**](https://img.shields.io/badge/-Contact-007f02)](mailto:SLSS_Official@langer-sebastian.de)
 
 </div>
 
@@ -75,17 +75,19 @@ SLSS CANAnalyser is developed in cooperation with **[SeRoSys Technology LLC](htt
 
 Compatible SeRoSys dongles provide, depending on model and configuration:
 
-- Two independent CAN / CAN FD channels
-- Switchable bus termination
-- Two D-Sub 9 connectors
+- Two independent CAN / CAN FD channels (ISO & non-ISO)
+- Software switchable bus termination
+- Male and female 9 pin Sub-D connectors
 - Hardware-supported standalone operation
 - Persistent storage of up to **40 transmit messages** for standalone use, with configurable startup delays and per-message intervals
+- SD card for standalone logging
+- and much more
 
 **Hardware and purchasing:** [SeRoSys Technology](https://serosys-tech.com/shop) · [European distributor](https://evision-webshop.de/hersteller/serosys/can-analyzer-exerciser-logger)
 
 ## Getting started
 
-1. **Get the software:** Visit the [official download center](https://serosys-tech.com/downloads).
+1. **Get the software:** Download from this repository or visit the [download center (US)](https://serosys-tech.com/downloads) or [download center (EU)](https://www.langer-sebastian.de/slss-cananalyser/).
 2. **Connect your interface:** Attach a supported CAN dongle and connect the required bus channel(s).
 3. **Configure the bus:** Select the correct CAN or CAN FD bitrates and interface settings.
 4. **Start monitoring:** Connect to the hardware and inspect messages in the live trace.
