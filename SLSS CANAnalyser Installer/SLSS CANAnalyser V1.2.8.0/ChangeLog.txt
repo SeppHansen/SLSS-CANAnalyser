@@ -1,0 +1,183 @@
+Update Version 1.2.8.0
+	SLSS CANAnalyser:
+	- Add standalone I/O pre-triggered log-buffer recording
+	- Add standalone A2B bus monitor pre-triggered log-buffer recording
+	- Rebuild software logger and live log view
+	- Add online license extension functionality
+	- Bugfix: Fix software logging timestamp calculation
+
+	SLSS DataViewer:
+	- Add A2B trigger message translation
+
+	SLSS HardwareSuite:
+	- Add firmware version 1.0.4.7 for Desk CAN Pro and Lab CAN Pro dongles 
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.7.0
+	SLSS CANAnalyser:
+	- Add SD card based bus data replay to SD card functions
+	- Add GPIO message and signal detection functions
+	- Add GPIO status message
+	- Add A2B and GPIO sd card logging
+	- Improve update interval for incoming data
+	- Add new filter save structure but keep loading and saving older files possible
+	- Add bold font selection for byte highlighting
+	- Add different set off colors for background highlighting
+	- Add PEAK hardware support (license extension necessary)
+	- Improve DBC data update speed
+	- Bugfix: Change DBC data table detection to message based, when only on line is selected
+	
+	SLSS DataViewer:
+	- Rebuild data import functions for faster import of large files
+	- Remove table paging of log files larger the 200.000 rows
+	- Add id filter dialog to pre-select multiple ids for filtering
+	- Rebuild offline data replay function for faster screen actualization 
+	- Rebuild filter selection to improve speed 
+	
+	SLSS HardwareSuite:
+	- Add firmware version 1.0.4.5 for Desk CAN Pro and Lab CAN Pro dongles
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.6.0
+	SLSS CANAnalyser:
+	- Add SD card bus data replay to SD card functions
+	
+	SLSS HardwareSuite:
+	- Add firmware version 1.4.4.4 for Desk CAN Pro and Lab CAN Pro dongles
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.5.1
+	SLSS CANAnalyser:
+	- Add SD card interface for Lab CAN Pro
+	
+	SLSS DataViewer:
+	- Add external format import to standard data load interface
+	- Remove external import entry from main menu bar 
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.4.4
+	SLSS CANAnalyser:
+	- Hotfix - Replacement for version 1.2.4.3 to fix LIN license key error 
+	  when decimal Id notation is selected
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.4.3
+	SLSS CANAnalyser:
+	- Added A2B (Automotive Audio Bus) support
+	- Added USB device name detection
+	
+	SLSS DataViewer: 
+	- Added A2B (Automotive Audio Bus) support
+	- Bugfix: Change replay behavior on filtered data
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.4.2
+	SLSS CANAnalyser:
+	- Added log mode selection to switch between continuous and on-change logging 
+	- Added automatic master request detection when importing LIN LDF files
+	- Allow sending master request message from database sending tab
+  	- Added LIN control commands to TCP/IP interface
+	- Added loading and saving functionality for LIN settings 
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.4.1
+	SLSS CANAnalyser:
+	- Added LDF parser to read and analyze LIN description files
+	- Added LIN support to the Send Database Signals tab
+	- Bugfix: Added missing English translation to the database save dialogs header
+	- Bugfix: Change database signal mapping detection from converted to raw based value
+
+	SLSS DataViewer: 
+	- Bugfix: Change database signal mapping detection from converted to raw based value
+
+	SLSS Graphic CANAnalyser:
+	- Aligned several text descriptions
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.4.0
+	SLSS CANAnalyser:
+	- Added Database Explorer for easier handling of DBC data, filtering by ECUs, etc.
+	- Search field integrated into Incoming DBC Signals tab
+	- Add posibility to directly select and set mapped values in the DBC send tab
+	- Filter window revised, search field integrated, option to add individual CAN IDs via text box integrated, etc.
+	- Preselection of the default value from the DBC file for the Send DBC Signals tab integrated
+	- Save behavior of the project directory revised
+	- Reading and recording of LIN data added
+	- Sending LIN data as LIN master added
+	- LIN slave simulation for master response added
+	- System settings test added for optimal program usage
+	- Bugfix: Bug when sending Big Endian DBC data fixed 
+
+	SLSS DataViewer: 
+	- Add horizontal scroll bar to filter boxes
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.3.2
+	SLSS CANAnalyser: 
+	- Add the "Send DBC Signals" tab, which allows you to enter physical DBC signal values and send them to the selected channel
+	- Add functionality to automatically (re)send DBC messages when the message is received on the bus
+	- Offline calculation of DBC signals in the "Incoming CAN Data" tab
+	- Add all necessary Windows prerequisites to the installation package to avoid download from Microsoft
+	- Add splash screen for loading time when starting the program
+
+------------------------------------------------------------------------------------------------------------	
+
+Update Version 1.2.2.1
+	SLSS CANAnalyser: 
+	- Add decimal notated *.ASC file export for recorded log files
+		
+	SLSS DataViewer:
+	- Add decimal *.ASC file import for recorded log files
+	- Bugfix: Properly detect CAN-2.0 messages in the newer format ASC message structure 
+
+	SLSS HardwareSuite:
+	- Add logging functionality for education devices
+
+------------------------------------------------------------------------------------------------------------
+
+Update Version 1.2.2.0
+	SLSS CANAnalyser: 
+	- Add *.ASC file export for recorded log files
+	- Add TCP/IP active state indicator to statusbar
+	- Move export of *.CSV files from export window to save dialog selection
+	- Move delimiter selection of *.CSV files from export window to menu settings
+	- Add input type restriction for DBC signal and message designation
+	- Add posibility to copy manual FD settings from one channel to the other channel 
+	- Add numeric type restriction for DBC scale, offset, min and max values
+	- Bugfix: Fix message type detection when id is already shown in incoming tab
+	- Bugfix: Fix message type detection for send messages, when recording is active   	
+	- Bugfix: Fix first time save failure for new created DBC files 
+	
+	SLSS DataViewer:
+	- Add *.ASC file import for recorded log files
+	- Move export of *.CSV files from export window to save dialog selection
+	- Move delimiter selection of *.CSV files from export window to menu settings
+	- Bugfix: Fix filter detection when detected arbitration id is already part of an existing id
+
+	SLSS Graphic CANAnalyser:
+	- Change timestamp to absolute time value to be able to compare signals from multiple windows
+
+	SLSS HardwareSuite:
+	- Update firmware for education devices to match current CANAnalyser requirements 
+
+------------------------------------------------------------------------------------------------------------
+
+Update Version 1.2.1.2
+	SLSS CANAnalyser: 
+	- Add legacy hardware support for Desk CAN Starter Dongles
+
+------------------------------------------------------------------------------------------------------------
+
+Update Version 1.2.1.1
+	SLSS CANAnalyser: 
+	- Remove usage of local SQL database
+	
