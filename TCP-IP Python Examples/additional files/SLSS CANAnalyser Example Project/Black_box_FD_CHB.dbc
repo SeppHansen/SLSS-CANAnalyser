@@ -1,0 +1,82 @@
+VERSION "Created by SeRoSys Technology"
+
+NS_ : 
+		NS_DESC_
+		CM_
+		BA_DEF_
+		BA_
+		VAL_
+		CAT_DEF_
+		CAT_
+		FILTER
+		BA_DEF_DEF_
+		EV_DATA_
+		ENVVAR_DATA_
+		SGTYPE_
+		SGTYPE_VAL_
+		BA_DEF_SGTYPE_
+		BA_SGTYPE_
+		SIG_TYPE_REF_
+		VAL_TABLE_
+		SIG_GROUP_
+		SIG_VALTYPE_
+		SIGTYPE_VALTYPE_
+		BO_TX_BU_
+		BA_DEF_REL_
+		BA_REL_
+		BA_DEF_DEF_REL_
+		BU_SG_REL_
+		BU_EV_REL_
+		BU_BO_REL_
+		SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 674 Vehicle_Messages: 8 SLSS_XXX
+ SG_ Speed : 0|16@1+ (0.01,0) [0|256] "Kph"  SLSS_XXX
+ SG_ Revs : 16|16@1+ (0.25,0) [0|16383.5] "RPM"  SLSS_XXX
+ SG_ BAT_VOLTS : 32|8@1+ (0.06,0) [0|15.3] "Volts"  SLSS_XXX
+ SG_ IGNITION : 40|8@1+ (1,0) [0|5] ""  SLSS_XXX
+ SG_ OIL_TEMP : 48|8@1+ (0.941,-40) [-40|200] "Deg C"  SLSS_XXX
+ SG_ FUEL_LEVEL : 56|4@1+ (6.6666667,0) [0|100] "%"  SLSS_XXX
+ SG_ TRANS : 60|4@1+ (1,0) [0|15] "POS"  SLSS_XXX
+
+BO_ 800 Radio_Controls: 8 SLSS_XXX
+ SG_ RADIO_POWER : 0|1@1+ (1,0) [0|1] ""  SLSS_XXX
+ SG_ RADIO_BAND : 1|2@1+ (1,0) [0|2] ""  SLSS_XXX
+ SG_ RADIO_FREQ_INDEX : 3|7@1+ (1,0) [0|117] ""  SLSS_XXX
+ SG_ RADIO_VOLUME : 10|6@1+ (1,0) [0|50] ""  SLSS_XXX
+ SG_ RADIO_PRESET : 16|3@1+ (1,0) [0|6] ""  SLSS_XXX
+ SG_ RADIO_SKIP : 19|2@1+ (1,0) [0|2] ""  SLSS_XXX
+ SG_ RADIO_MENU_BACK : 21|1@1+ (1,0) [0|1] ""  SLSS_XXX
+
+BO_ 2147484747 CANFD_Ext_DBC_Signals: 16 SLSS__XXX
+ SG_ Population : 64|64@1- (0.001,1) [0|100000] "People" SLSS__XXX
+ SG_ Astronomical Distance : 0|64@1- (0.000000000001,0) [0|1000000] "Parsecs" SLSS__XXX
+
+BO_ 1098 CANFD_DBC_Signals: 24 SLSS__XXX
+ SG_ signal3 : 128|64@1- (0.0000000001,0) [0|10000] "Dimesion1" SLSS__XXX
+ SG_ signal2 : 64|64@1- (0.00000001,0) [0|1000] "Dimesion2" SLSS__XXX
+ SG_ signal1 : 0|64@1- (0.000000001,0) [0|100000] "Dimesion3" SLSS__XXX
+
+
+VAL_ 674 IGNITION 5 "FAULT" 4 "UNDEFINED" 3 "CRANK" 2 "ON" 1 "ACCESSORY" 0 "OFF" ;
+
+VAL_ 674 TRANS 15 "Fault" 14 "UnknownPosition" 13 "Undefined_2" 12 "Undefined_1" 11 "_6" 10 "_5" 9 "_4" 8 "_3" 7 "_2" 6 "_1" 5 "Low" 4 "Sport_DriveSport" 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+
+VAL_ 800 RADIO_POWER 0 "Off" 1 "On" ;
+
+VAL_ 800 RADIO_BAND 0 "FM" 1 "AM" 2 "SXM" ;
+
+VAL_ 800 RADIO_PRESET 0 "Idle" 1 "Preset_1" 2 "Preset_2" 3 "Preset_3" 4 "Preset_4" 5 "Preset_5" 6 "Preset_6" ;
+
+VAL_ 800 RADIO_SKIP 0 "Idle" 1 "Skip_Up" 2 "Skip_Down" ;
+
+VAL_ 800 RADIO_MENU_BACK 0 "Idle" 1 "Pressed" ;
+
+CM_ SG_ 800 RADIO_FREQ_INDEX "Raw tuning step index. Decode per band: FM = (index x 0.2) + 87.9 MHz [range 87.9-107.9, steps 0-100]; AM = (index x 10) + 530 kHz [range 530-1700, steps 0-117]; SXM = index + 1 channel [range Ch1-Ch100, steps 0-99]." ;
+
+

@@ -1,0 +1,11 @@
+#Version_2
+SA_RAW;SA_ID;SA_EXT;SA_ISFD;SA_BRS;SA_TRIGGER;SA_CHN;SA_INLIST;SA_REPEAT;SA_PERIODTIME;SA_RAW_dec;SA_RAW_hex;SA_DESIGNATION;SA_EDIT;SA_DELETE;SA_MsgUp;SA_MsgDown
+rawID;ID;Extended;CAN FD message;CAN FD Bit Rate Switch;Trigger source;Send to channel;Sending activated;Repeat periodically;Transmission period [ms]  (editable);Raw data;Raw data hex;Designation;Edit;Delete;;
+1;0x001;False;True;False;GPIO 1;CH_A;true;False;100;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+2;0x002;False;False;False;GPIO 1;CH_A;true;True;500;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+3;0x003;False;True;False;GPIO 2;CH_A;true;False;100;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+4;0x004;False;False;False;GPIO 2;CH_A;true;True;500;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+5;0x005;False;False;False;None;CH_A;true;False;100;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+6;0x006;False;False;False;None;CH_A;true;False;100;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+7;0x007;False;True;True;None;CH_A;true;True;1000;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap
+8;0x008;False;True;True;None;CH_A;true;True;1000;1 2 3 4 5 6 7 8;0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08;;edit;delete;System.Drawing.Bitmap;System.Drawing.Bitmap

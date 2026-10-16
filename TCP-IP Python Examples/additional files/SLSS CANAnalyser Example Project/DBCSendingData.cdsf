@@ -1,0 +1,10 @@
+#Version_2
+DBCSEND_MSGRECEIVED;DBCSEND_RAW;DBCSEND_EXT;DBCSEND_MSGTYPE;DBCSEND_CHNRCV;DBCSEND_CHN;DBCSEND_SENDONRCV;DBCSEND_INLIST;DBCSEND_COUNT;DBCSEND_PERIODTIME;DBCSEND_MSGNAME;DBCSEND_SIGNAME;DBCSEND_USE_MAPPING;DBCSEND_VALUE;DBCSEND_UNIT;DBCSEND_FRAMESIZE;DBCSEND_STARTBIT;DBCSEND_BITLENGTH;DBCSEND_ENDIAN;DBCSEND_SIGNED;DBCSEND_SCALE;DBCSEND_OFFSET;DBCSEND_SENT;DBCSEND_DELETE;DBCSEND_LAST;DBCSEND_MsgUp;DBCSEND_MsgDown
+Message received;rawID;Extended;Data type;Receive on channel;Send to channel;Message retransmission trigger;Start | Stop sending message;Number sent;Transmission period [ms]  (editable);Message name;Signal name;Use Mapping;Value (editable);Unit;Frame (bytes);Start bit;Data length;Little Endian (Intel);Sign;Scaling;Offset;Send once;Delete;Last send;;
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; Speed;False;50;Kph;8;0;16;True;False;0.01;0;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; Revs;False;2750;RPM;8;16;16;True;False;0.25;0;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; IGNITION;True;2  (ON);;8;40;8;True;False;1;0;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; BAT_VOLTS;False;13,45;Volts;8;32;8;True;False;0.06;0;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; TRANS;True;2  (Neutral);POS;8;60;4;True;False;1;0;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; OIL_TEMP;True;85;Deg_C;8;48;8;True;False;0.941;-40;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+System.Drawing.Bitmap;674;False;;CH_B;CH_B;False;True;0;100;Vehicle_Messages; FUEL_LEVEL;True;72;%;8;56;4;True;False;6.6666667;0;send;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap

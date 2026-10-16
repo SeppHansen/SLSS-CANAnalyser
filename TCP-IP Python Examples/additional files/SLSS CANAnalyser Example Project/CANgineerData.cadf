@@ -1,0 +1,6 @@
+#Version_2
+REVENG_InstID;REVENG_ID;REVENG_EXT;REVENG_CHN;REVENG_DEV;REVENG_START;REVENG_LEN;REVENG_SMODE;REVENG_ENDIAN;REVENG_SDIR;REVENG_FCOUNT;REVENG_ACTIVE;REVENG_EDIT;REVENG_DELETE;REVENG_HITLIST
+InstanceID;ID;Extended;Channel;Min. deviation;Start position (bit);Signal length;Search mode;Little endian (Intel);Search direction;Number of search hits found;Active;Edit;Delete;Show hit list
+299#20023515130,5311;0x12B;False;Both;1;-;-;byte selective;False;rising & falling;0;enabled;edit;delete;hit list
+510#20023522759,8215;0x1FE;False;Both;1;-;-;byte selective;False;rising & falling;401;enabled;edit;delete;hit list
+510#20023566008,5348;0x1FE;False;Both;1;16;16;bit selective;True;rising & falling;0;enabled;edit;delete;hit list

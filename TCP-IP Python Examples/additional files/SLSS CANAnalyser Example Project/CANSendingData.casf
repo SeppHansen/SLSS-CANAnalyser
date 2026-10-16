@@ -1,0 +1,6 @@
+#Version_2
+SEND_RAW;SEND_ID;SEND_EXT;SEND_ISFD;SEND_BRS;SEND_CHN;SEND_INLIST;SEND_COUNT;SEND_PERIODTIME;SEND_RAW_dec;SEND_RAW_hex;SEND_DESIGNATION;SEND_SENT;SEND_EDIT;SEND_DELETE;SEND_LAST;SEND_MsgUp;SEND_MsgDown
+rawID;ID;Extended;CAN FD message;CAN FD Bit Rate Switch;Send to channel;Start | Stop sending message;Number sent;Transmission period [ms]  (editable);Raw data;Raw data hex;Designation;Send once;Edit;Delete;zuletzt gesendet;;
+12;0x00C;False;False;False;Both;true;0;100;222 35 204 47 127 18 154 79;0xDE 0x23 0xCC 0x2F 0x7F 0x12 0x9A 0x4F;;send;edit;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+14;0x00E;False;False;False;Both;true;0;100;2 1 12 109 18 50 58 255;0x2 0x1 0xC 0x6D 0x12 0x32 0x3A 0xFF;;send;edit;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
+26;0x01A;False;False;False;Both;true;0;100;36 18 70 35 255 1 121 27;0x24 0x12 0x46 0x23 0xFF 0x1 0x79 0x1B;;send;edit;delete;0;System.Drawing.Bitmap;System.Drawing.Bitmap
